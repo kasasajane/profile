@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="profilepicture.jpg" type="image/jpg">
+    <title>Nakawuka Jane Nabbosa - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            padding: 3rem;
+            border-radius: 1rem;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+        }
+
+        .header-info {
+            flex-grow: 1;
+        }
+
+        .header-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tabs {
+            margin-top: 1.5rem;
+        }
+
+        .tabs a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s;
+            margin-right: 0.5rem;
+        }
+
+        .tabs a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .grid-item {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .work-experience-item {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .work-experience-item strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .photo img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .tabs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+        }
+        footer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="photo">
+                <img src="profilepicture.jpg" alt="Profile Photo">
+            </div>
+            <div class="header-info">
+                <h1>Nakawuka Jane Nabbosa</h1>
+                <h2>Information Science Student at COCIS</h2>
+                <div class="tabs">
+                    <a href="#schools">Schools</a>
+                    <a href="#experience">Work Experience</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#career">Career Prospects</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="schools" class="section">
+            <h2>Schools Attended</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>2012</h3>
+                    <p>Kirenya C/U Primary School - PLE Certificate</p>
+                </div>
+                <div class="grid-item">
+                    <h3>2016</h3>
+                    <p>Rines Secondary School - O Level</p>
+                </div>
+                <div class="grid-item">
+                    <h3>2018</h3>
+                    <p>Rines Secondary School - UACE Certificate</p>
+                </div>
+                <div class="grid-item">
+                    <h3>2019-2020</h3>
+                    <p>Uganda Management Institute - Diploma (DRIM)</p>
+                </div>
+                <div class="grid-item">
+                    <h3>2022-2026</h3>
+                    <p>Makerere University - BLIS Graduate</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience" class="section">
+            <h2>Work Experience</h2>
+            <div class="work-experience-item">
+                <strong>Internship Experience at Wakiso District Central Registry</strong>
+                <p>During my internship at the Wakiso District Central Registry, I was immersed in the intricate world of record management. 
+                    I actively participated in a variety of tasks, including:</p>
+                    <ul><li>Record Organization and Maintenance: I assisted in meticulously organizing and maintaining a diverse range of official documents,
+                         ensuring their accessibility and security.</li>
+                    <li>Documentation Support: I provided valuable support in the preparation and processing of crucial documentation, contributing to the
+                         smooth operation of the registry.</li>
+                    <li>Data Entry and Management: I gained proficiency in accurately inputting and managing data within the registry's digital systems,
+                         enhancing efficiency and data integrity.</li>
+                    <li>Client Interactions: I had the opportunity to interact with clients, providing guidance and assistance with their inquiries and 
+                        requests, fostering a positive and professional environment.</li>
+                    <li>Through these experiences, I developed a keen understanding of record management principles and honed my organizational and 
+                        attention-to-detail skills. I am grateful for the opportunity to contribute to the efficient functioning of the Wakiso District 
+                        Central Registry and for the valuable insights gained during my internship.</li></ul>
+            </div>
+        </div>
+
+        <div id="hobbies" class="section">
+            <h2>Hobbies</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Watching Movies</h3>
+                </div>
+                <div class="grid-item">
+                    <h3>Playing Music</h3>
+                </div>
+                <div class="grid-item">
+                    <h3>Reading Novels</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="career" class="section">
+            <h2>Career Prospects</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Senior Records Officer</h3>
+                </div>
+                <div class="grid-item">
+                    <h3>Records Manager at an Organization</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jane Kasasa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
